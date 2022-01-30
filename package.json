@@ -7,7 +7,7 @@
     "ui",
     "theme"
   ],
-  "repository": "https://https://github.com/ReeniePie/GRIS-Theme-ui",
+  "repository": "https://github.com/ReeniePie/GRIS-Theme-ui",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
