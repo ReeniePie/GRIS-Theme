@@ -8,7 +8,7 @@
 // -------------------
 
 
-body {
+.body {
   font-size: @font-size;
   color: @text-color;
   background-color: @app-background-color;
@@ -18,5 +18,43 @@ atom-pane {
   border-right: 1px solid @base-border-color;
   &:last-child {
     border-right: none;
+  }
+}
+
+.workspace {
+  background-image: linear-gradient(@purple1, @purple3);
+  color:@red7;
+}
+
+.terminal-view{
+  .standard{
+      background: linear-gradient(@purple3,@red1);
+      color: @red7;
+  }
+}
+
+
+
+.scrollbars-visible-always {
+  /deep/ ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  /deep/ ::-webkit-scrollbar-track,
+  /deep/ ::-webkit-scrollbar-corner {
+    background: rgba(127, 127, 127, 0.1);
+  }
+
+  /deep/ ::-webkit-scrollbar-thumb {
+    background: rgba(127, 127, 127, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 1px rgba(127, 127, 127, 0.3) inset;
+  }
+
+  /deep/ ::-webkit-scrollbar-thumb:hover {
+    background: rgba(127, 127, 127, 0.3);
+    border-radius: 5px;
+    box-shadow: 0 0 1px rgba(127, 127, 127, 0.4) inset;
   }
 }

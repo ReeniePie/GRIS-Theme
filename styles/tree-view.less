@@ -11,10 +11,18 @@
 }
 
 .tree-view {
-  color: @text-color;
-  background-color: @tree-view-background-color;
+  color: @purple5;
+  background: linear-gradient(@purple1, @purple3, @leaf5);
 
   .list-item.selected {
-    color: @text-color-selected;
+    color: @purple1;
   }
+  .directory{
+    background-color: #99DBFF50;
+    border-radius: 5px;
+  }
+}
+
+.atom-dock-resize-handle{
+  background-image: linear-gradient(@purple1,@purple3);
 }

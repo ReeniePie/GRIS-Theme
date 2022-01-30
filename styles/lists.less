@@ -11,10 +11,9 @@
     padding-left: @component-padding/2;
 
     // We want to highlight the background of the list items because we dont know their size.
-    &.selected {
-      color: @text-color-selected;
-      background-color: @background-color-selected;
-      &:before{ display: none; }
+    &.selected {;
+      background-color: #ffffff;
+      &:before{ display: none;}
     }
   }
 }
@@ -22,10 +21,23 @@
 
 // List Tree -------------------
 .list-tree {
-  color: @text-color;
+  color: @purple4;
   .selected {
     color: @text-color-selected;
+    &::before{
+      background-image: linear-gradient(to right,@orange1, @orange6);
+      color: @orange;
+    }
   }
+}
+.status-ignored{
+  color: @purple4;
+}
+.status-modified{
+  color: @white;
+}
+.status-added{
+  color: @red1;
 }
 
 

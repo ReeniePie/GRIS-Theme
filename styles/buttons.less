@@ -6,20 +6,20 @@
 
 
 .btn {
-  color: lighten(@text-color, 6%);
-  background-color: @button-background-color;
+  color: @red7;
+  background-image:radial-gradient(@purple3, @purple1);
   &:hover,
   &:focus {
     color: @text-color-highlight;
-    background-color: @button-background-color-hover;
+    background-color: #ffffff;
   }
   &:active {
     color: fade(@text-color-selected, 66%);
-    background-color: darken(@button-background-color, 2%);
+    background-color: #ffffff;
   }
   &.selected {
     color: @text-color-selected;
-    background-color: @button-background-color-selected;
+    background-color: #ffffff;
   }
   &:focus,
   &:focus:active {
@@ -41,17 +41,17 @@
   background-color: @bg;
   &:hover,
   &:focus {
-    background-color: lighten(@bg, 4%);
+    background-color: #ffffff;
   }
   &:active {
-    background-color: darken(@bg, 4%);
+    background-color: #ffffff;
   }
   &.selected {
-    background-color: lighten(@bg, 4%);
+    background-color: #ffffff;
   }
   &.selected:focus,
   &.selected:hover {
-    background-color: lighten(@bg, 8%);
+    background-color: #ffffff;
   }
 }
 
@@ -59,5 +59,16 @@
 // Button Group -----------------------
 
 .btn-group > .btn {
-  border-color: hsla(0,0%,0%,.2);
+  background-color: #ffffff;
+}
+
+.input-block{
+  background-color: @purple4;
+  color:@red3;
+  &.find-container{
+    background: rgba(127, 127, 127, 0.2);
+  }
+  &.replace-container{
+    background: rgba(127, 127, 127, 0.2);
+  }
 }

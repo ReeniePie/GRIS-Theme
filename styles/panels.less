@@ -16,6 +16,45 @@
   }
 }
 
+.settings-view,{
+    background-image: linear-gradient(@purple1, @purple3);
+    color:@blue6;
+    .config-menu{
+        background-image: linear-gradient(@purple1, @purple3);
+        //background-blend-mode: darken;
+        .icon-settings{
+          background-image:linear-gradient(to right,@orange1,@orange6);
+        }
+        .icon{
+          color:@blue6;
+        }
+    }
+    .text{
+      color: @blue6;
+    }
+    .settings-panel label{
+        color:@red6;
+    }
+    .setting-description{
+      color: @red7;
+    }
+}
+
+.input-checkbox{
+  background-color: @orange6;
+  &:checked{
+    background-color: @orange1;
+  }
+  &:after{
+    background-color:@blue6;
+  }
+  &:before{
+    background-color:@blue6;
+  }
+
+}
+
+
 
 // Modal -------------------
 // Used on top of the editor, like the Command Palette.
@@ -24,4 +63,6 @@ atom-panel.modal {
   border: 1px solid @overlay-border-color;
   border-top: none;
   box-shadow: 0 2px 8px 1px hsla(0,0%,0%,.3);
+  background-image: linear-gradient(@purple3, @red1);
+  color: @blue6;
 }
